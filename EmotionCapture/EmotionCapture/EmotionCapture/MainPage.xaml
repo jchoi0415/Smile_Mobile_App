@@ -2,10 +2,45 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:EmotionCapture"
-             x:Class="EmotionCapture.MainPage">
-
-	<Label Text="Welcome to Xamarin Forms!" 
+             x:Class="EmotionCapture.MainPage"
+             Title="Emotion Capture">
+    
+    <ContentPage.Content>
+        <StackLayout Spacing="0" x:Name="layout">
+            <Button Text="StackLayout" VerticalOptions="Start"
+        HorizontalOptions="FillAndExpand" />
+            <BoxView Color="#FFF724" VerticalOptions="FillAndExpand"
+        HorizontalOptions="FillAndExpand" />
+            <BoxView Color="#FF001F" VerticalOptions="FillAndExpand"
+  HorizontalOptions="FillAndExpand" />
+            <BoxView HeightRequest="75" Color="#1491CC" VerticalOptions="End"
+  HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+    
+    <StackLayout>
+        <Label Text="Emotion Capture" 
+           VerticalOptions="StartAndExpand" 
+           HorizontalOptions="Center" 
+           FontAttributes="Bold"
+           FontSize="50"
+           TextColor="Teal"/>
+        
+        <Image Source="mainpagepic.png"/>
+        
+        <Label Text="Practice your emotions for perfect selfies!" 
            VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+           HorizontalOptions="Center" 
+           FontAttributes="Bold"
+           FontSize="12"
+           TextColor="Black"/>
+
+        <Label Text="Developer: Jack Choi " 
+           VerticalOptions="EndAndExpand" 
+           HorizontalOptions="Center" 
+           FontAttributes="Bold"
+           FontSize="12"
+           TextColor="Black"/>
+    </StackLayout>
 
 </ContentPage>
