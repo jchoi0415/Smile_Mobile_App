@@ -1,4 +1,3 @@
-C:\Users\Choi\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture\obj\Debug\EmotionCapture.MainPage.xaml.g.cs
 C:\Users\Choi\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture\obj\Debug\EmotionCapture.App.xaml.g.cs
 C:\Users\Choi\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture\bin\Debug\EmotionCapture.dll
 C:\Users\Choi\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture\bin\Debug\EmotionCapture.pdb
@@ -13,3 +12,6 @@ C:\Users\Choi\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCaptur
 C:\Users\Choi\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture\obj\Debug\EmotionCapture.dll
 C:\Users\Choi\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture\obj\Debug\EmotionCapture.pdb
 C:\Users\Choi\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture\obj\Debug\EmotionCapture.csprojResolveAssemblyReference.cache
+C:\Users\Choi\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture\obj\Debug\EmotionCapture.Pages.MainPage.xaml.g.cs
+C:\Users\Choi\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture\obj\Debug\EmotionCapture.Pages.CameraPage.xaml.g.cs
+C:\Users\Choi\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture\obj\Debug\EmotionCapture.Pages.HistoryPage.xaml.g.cs

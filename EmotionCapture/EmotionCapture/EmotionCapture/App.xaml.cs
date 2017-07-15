@@ -13,7 +13,15 @@ namespace EmotionCapture
         {
             InitializeComponent();
 
-            MainPage = new EmotionCapture.MainPage();
+            MainPage = new TabbedPage
+            {
+                Children =
+                {
+                    new MainPage(),
+                    new CameraPage(),
+                    new HistoryPage()
+                }
+            };
         }
 
         protected override void OnStart()
