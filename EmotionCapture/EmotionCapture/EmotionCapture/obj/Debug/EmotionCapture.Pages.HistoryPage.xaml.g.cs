@@ -11,8 +11,8 @@
 namespace EmotionCapture {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Choi\\Desktop\\MSA2017Xamarin\\EmotionCapture\\EmotionCapture\\EmotionCapture" +
-        "\\Pages\\HistoryPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Choiboy\\Desktop\\MSA2017Xamarin\\EmotionCapture\\EmotionCapture\\EmotionCapt" +
+        "ure\\Pages\\HistoryPage.xaml")]
     public partial class HistoryPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

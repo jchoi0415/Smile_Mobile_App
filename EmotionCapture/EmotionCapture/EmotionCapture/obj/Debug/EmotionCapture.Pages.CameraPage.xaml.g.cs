@@ -11,8 +11,8 @@
 namespace EmotionCapture {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Choi\\Desktop\\MSA2017Xamarin\\EmotionCapture\\EmotionCapture\\EmotionCapture" +
-        "\\Pages\\CameraPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Choiboy\\Desktop\\MSA2017Xamarin\\EmotionCapture\\EmotionCapture\\EmotionCapt" +
+        "ure\\Pages\\CameraPage.xaml")]
     public partial class CameraPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

@@ -20,12 +20,12 @@
     
     <StackLayout>
         <Label Text="Emotion Capture" 
-           VerticalOptions="StartAndExpand" 
            HorizontalOptions="Center" 
+           VerticalOptions="StartAndExpand" 
            FontAttributes="Bold"
-           FontSize="50"
+           FontSize="45"
            TextColor="Teal"/>
-        
+
         <Image Source="mainpagepic.png"/>
 
         <Label Text="Practice your emotions for perfect selfies!" 
