@@ -18,7 +18,7 @@ namespace EmotionCapture
         public HistoryPage ()
 		{
 			InitializeComponent ();
-		}
+        }
 
         async void GetEmotions(object sender, System.EventArgs e)
         {

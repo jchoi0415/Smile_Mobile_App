@@ -15,7 +15,8 @@ using Xamarin.Forms.Xaml;
 
 namespace EmotionCapture
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
+
+    [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class CameraPage : ContentPage
 	{
 		public CameraPage ()
@@ -48,6 +49,7 @@ namespace EmotionCapture
                 return file.GetStream();
             });
 
+            currentEmotion.Text = "Analysing Facial Emotion...";
             await EmotionAnalyser(file);
         }
 
@@ -77,7 +79,7 @@ namespace EmotionCapture
                 {
                     var responseString = await response.Content.ReadAsStringAsync();
 
-                    DeserializeJSON(responseString);
+                    DeserializeJSONAsync(responseString);
                 }
                 else
                 {
@@ -87,24 +89,48 @@ namespace EmotionCapture
             }
         }
 
-        public void DeserializeJSON(string responseString)
+        public async void DeserializeJSONAsync(string responseString)
         {
             var emotions = JsonConvert.DeserializeObject<EmotionModel[]>(responseString);
             var scores = emotions[0].scores;
             var highestScore = scores.Values.OrderByDescending(score => score).First();
             //probably a more elegant way to do this.
             var highestEmotion = scores.Keys.First(key => scores[key] == highestScore);
-            if(highestEmotion == "happiness")
+            if (highestEmotion == "happiness")
             {
-                currentEmotion.Text = "YOU ARE HAPPY";
+                EmotionCaptureModel emotion = new EmotionCaptureModel()
+                {
+                    Happy = true,
+                    Neutral = false,
+                    Other = false
+                };
+                await AzureManager.AzureManagerInstance.AddEmotion(emotion);
+
+                currentEmotion.Text = "YOU ARE SMILING, GOOD JOB!";
             }
-            else if(highestEmotion == "neutral")
+            else if (highestEmotion == "neutral")
             {
+                EmotionCaptureModel emotion = new EmotionCaptureModel()
+                {
+                    Happy = false,
+                    Neutral = true,
+                    Other = false
+                };
+                await AzureManager.AzureManagerInstance.AddEmotion(emotion);
+
                 currentEmotion.Text = "TOO NEUTRAL, SMILE!";
             }
             else
             {
-                currentEmotion.Text = "Are you even trying to smile?";
+                EmotionCaptureModel emotion = new EmotionCaptureModel()
+                {
+                    Happy = false,
+                    Neutral = false,
+                    Other = true
+                };
+                await AzureManager.AzureManagerInstance.AddEmotion(emotion);
+
+                currentEmotion.Text = "ARE YOU EVEN TRYING, MATE?";
             }
         }
     }

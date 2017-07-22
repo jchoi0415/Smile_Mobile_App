@@ -13,12 +13,12 @@ namespace EmotionCapture
         public string id { get; set; }
 
         [JsonProperty(PropertyName = "Happy")]
-        public float Happy { get; set; }
+        public Boolean Happy { get; set; }
 
         [JsonProperty(PropertyName = "Neutral")]
-        public float Neutral { get; set; }
+        public Boolean Neutral { get; set; }
 
         [JsonProperty(PropertyName = "Other")]
-        public float Other { get; set; }
+        public Boolean Other { get; set; }
     }
 }
