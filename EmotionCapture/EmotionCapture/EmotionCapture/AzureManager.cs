@@ -41,5 +41,15 @@ namespace EmotionCapture
         {
             return await this.EmotionCaptureTable.ToListAsync();
         }
+
+        public async Task AddEmotion(EmotionCaptureModel emotionCaptureModel)
+        {
+            await this.EmotionCaptureTable.InsertAsync(emotionCaptureModel);
+        }
+
+        public async Task DeleteHistory(EmotionCaptureModel emotionCaptureModel)
+        {
+            await this.EmotionCaptureTable.DeleteAsync(emotionCaptureModel);
+        }
     }
 }

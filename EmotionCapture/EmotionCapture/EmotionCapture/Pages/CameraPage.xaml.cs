@@ -64,29 +64,47 @@ namespace EmotionCapture
             client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "664536650bae4da6889cd586eea2a941"); //5c14c67a270c4d0cae8a2e016745a23a
             string url = "https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize";
             HttpResponseMessage response;
-            currentEmotion.Text = "Setting Client DONE";
+
             byte[] byteData = GetImageAsByteArray(file);
-            currentEmotion.Text = "Image to Byte Array";
+
             using (var content = new ByteArrayContent(byteData))
             {
                 content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
-                currentEmotion.Text = "Setting MediaTypeHeader";
+
                 response = await client.PostAsync(url, content);
-                currentEmotion.Text = "CALLED FOR REQUEST";
+
                 if (response.IsSuccessStatusCode)
                 {
                     var responseString = await response.Content.ReadAsStringAsync();
 
-                    //FaceObject responseModel = JsonConvert.DeserializeObject<FaceObject>(responseString);
-
-                    //this.currentEmotion.Text = (responseModel.scores.happiness.ToString());
-                    currentEmotion.Text = "You here son";
+                    DeserializeJSON(responseString);
                 }
                 else
                 {
-                    currentEmotion.Text = "You Dun GOOFED";
+                    currentEmotion.Text = "Something is wrong!";
                 }
                 file.Dispose();
+            }
+        }
+
+        public void DeserializeJSON(string responseString)
+        {
+            var emotions = JsonConvert.DeserializeObject<EmotionModel[]>(responseString);
+            var scores = emotions[0].scores;
+            var highestScore = scores.Values.OrderByDescending(score => score).First();
+            //probably a more elegant way to do this.
+            var highestEmotion = scores.Keys.First(key => scores[key] == highestScore);
+            if(highestEmotion == "happiness")
+            {
+                currentEmotion.Text = "YOU ARE HAPPY";
+            }
+            else if(highestEmotion == "neutral")
+            {
+                currentEmotion.Text = "TOO NEUTRAL, SMILE!";
+            }
+            else
+            {
+                currentEmotion.Text = "Are you even trying to smile?";
             }
         }
     }

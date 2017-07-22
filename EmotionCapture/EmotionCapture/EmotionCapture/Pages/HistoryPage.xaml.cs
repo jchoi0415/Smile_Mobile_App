@@ -22,9 +22,24 @@ namespace EmotionCapture
 
         async void GetEmotions(object sender, System.EventArgs e)
         {
-            List<EmotionCaptureModel> EmotionInformation = await AzureManager.AzureManagerInstance.GetEmotionInformation();
-            //EmotionInformation.Reverse();
-            HotDogList.ItemsSource = EmotionInformation;
+            List<EmotionCaptureModel> info = await AzureManager.AzureManagerInstance.GetEmotionInformation();
+            //info.Reverse();
+            EmotionList.ItemsSource = info;
+        }
+
+        async void ClearHistory(object sender, System.EventArgs e)
+        {
+            var answer = await DisplayAlert("WARNING", "Are you sure you want to clear your history?", "Yes", "No");
+            if(answer == true)
+            {
+                List<EmotionCaptureModel> info = await AzureManager.AzureManagerInstance.GetEmotionInformation();
+                foreach (EmotionCaptureModel element in info)
+                {
+                    await AzureManager.AzureManagerInstance.DeleteHistory(element);
+                }
+                List<EmotionCaptureModel> newInfo = await AzureManager.AzureManagerInstance.GetEmotionInformation();
+                EmotionList.ItemsSource = newInfo;
+            }
         }
     }
 }

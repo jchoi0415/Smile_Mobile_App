@@ -12,28 +12,13 @@ namespace EmotionCapture
         [JsonProperty(PropertyName = "id")]
         public string id { get; set; }
 
-        [JsonProperty(PropertyName = "Anger")]
-        public float Anger { get; set; }
-
-        [JsonProperty(PropertyName = "Contempt")]
-        public float Contempt { get; set; }
-
-        [JsonProperty(PropertyName = "Disgust")]
-        public float Disgust { get; set; }
-
-        [JsonProperty(PropertyName = "Fear")]
-        public float Fear { get; set; }
-
-        [JsonProperty(PropertyName = "Happiness")]
-        public float Happiness { get; set; }
+        [JsonProperty(PropertyName = "Happy")]
+        public float Happy { get; set; }
 
         [JsonProperty(PropertyName = "Neutral")]
         public float Neutral { get; set; }
 
-        [JsonProperty(PropertyName = "Sadness")]
-        public float Sadness { get; set; }
-
-        [JsonProperty(PropertyName = "Surprise")]
-        public float Surprise { get; set; }
+        [JsonProperty(PropertyName = "Other")]
+        public float Other { get; set; }
     }
 }

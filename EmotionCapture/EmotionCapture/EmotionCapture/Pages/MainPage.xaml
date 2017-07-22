@@ -19,11 +19,11 @@
     </ContentPage.Content>
     
     <StackLayout>
-        <Label Text="Emotion Capture" 
+        <Label Text="SMILE :)" 
            HorizontalOptions="Center" 
            VerticalOptions="StartAndExpand" 
            FontAttributes="Bold"
-           FontSize="45"
+           FontSize="50"
            TextColor="Teal"/>
 
         <Image Source="mainpagepic.png"/>

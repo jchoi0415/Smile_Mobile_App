@@ -14,21 +14,22 @@
                 FontAttributes="Bold"
                 FontSize="30"
                 TextColor="Teal"/>
-            
-            <ListView x:Name="HotDogList" HasUnevenRows="True">
+
+            <ListView x:Name="EmotionList" HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
-                                <Label Text="{Binding Happiness, StringFormat='Happiness: {0:N}'}" HorizontalOptions="FillAndExpand" Margin="20,0,0,0" VerticalTextAlignment="Center"/>
+                                <Label Text="{Binding Happy, StringFormat='Happy: {0:N}'}" HorizontalOptions="FillAndExpand" Margin="20,0,0,0" VerticalTextAlignment="Center"/>
                                 <Label Text="{Binding Neutral, StringFormat='Neutral: {0:N}'}" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" VerticalTextAlignment="Center"/>
-                                <Label Text="{Binding Sadness, StringFormat='Sadness: {0:N}'}" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" VerticalTextAlignment="Center"/>
+                                <Label Text="{Binding Other, StringFormat='Other: {0:N}'}" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" VerticalTextAlignment="Center"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Button Text="Load History (Latest to Oldest)" TextColor="White" BackgroundColor="Teal" Clicked="GetEmotions" />
+            <Button Text="LOAD HISTORY (Latest to Oldest)" TextColor="White" BackgroundColor="Teal" Clicked="GetEmotions" />
+            <Button Text="CLEAR HISTORY" TextColor="White" BackgroundColor="Teal" Clicked="ClearHistory" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
