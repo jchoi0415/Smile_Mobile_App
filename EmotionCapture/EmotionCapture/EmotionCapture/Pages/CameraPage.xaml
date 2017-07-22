@@ -2,7 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EmotionCapture.CameraPage"
-             Title="Take a shot!">
-    
-    
+             Title="Camera">
+    <StackLayout>
+        <Label Text="MAKE A FACE" 
+                HorizontalOptions="Center" 
+                VerticalOptions="StartAndExpand" 
+                FontAttributes="Bold"
+                FontSize="30"
+                TextColor="Teal"/>
+        
+        <Image x:Name="picture"/>
+
+        <Label x:Name="currentEmotion" HorizontalOptions="Center"/>
+
+        <Button Text="Take a picture" x:Name="CameraButton" TextColor="White" BackgroundColor="Teal" Clicked="TakePicture" />
+    </StackLayout>
 </ContentPage>
