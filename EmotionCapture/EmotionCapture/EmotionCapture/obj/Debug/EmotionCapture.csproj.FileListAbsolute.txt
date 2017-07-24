@@ -15,8 +15,8 @@ C:\Users\Choi\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCaptur
 C:\Users\Choi\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture\obj\Debug\EmotionCapture.Pages.MainPage.xaml.g.cs
 C:\Users\Choi\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture\obj\Debug\EmotionCapture.Pages.CameraPage.xaml.g.cs
 C:\Users\Choi\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture\obj\Debug\EmotionCapture.Pages.HistoryPage.xaml.g.cs
-C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture\bin\Debug\EmotionCapture.dll
 C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture\bin\Debug\EmotionCapture.dll.config
+C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture\bin\Debug\EmotionCapture.dll
 C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture\bin\Debug\EmotionCapture.pdb
 C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture\bin\Debug\Microsoft.WindowsAzure.Mobile.dll
 C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture\bin\Debug\Newtonsoft.Json.dll

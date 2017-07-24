@@ -123,15 +123,3 @@ C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCap
 C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture.Android\obj\Debug\res\drawable\mainpagepic.png
 C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture.Android\obj\Debug\R.cs.flag
 C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture.Android\obj\Debug\uploadflags.txt
-C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture.Android\bin\Debug\EmotionCapture.dll.mdb
-C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture.Android\bin\Debug\EmotionCapture.Android.dll.mdb
-C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture.Android\obj\Debug\android\assets\EmotionCapture.Android.dll.mdb
-C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture.Android\obj\Debug\android\assets\EmotionCapture.dll.mdb
-C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
-C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture.Android\obj\Debug\android\assets\Plugin.Media.Abstractions.dll.mdb
-C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture.Android\obj\Debug\android\assets\Plugin.Media.dll.mdb
-C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture.Android\obj\Debug\android\assets\Plugin.Permissions.Abstractions.dll.mdb
-C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture.Android\obj\Debug\android\assets\Plugin.Permissions.dll.mdb
-C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
-C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
-C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb

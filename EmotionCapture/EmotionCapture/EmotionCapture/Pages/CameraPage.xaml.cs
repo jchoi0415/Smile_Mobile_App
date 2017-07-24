@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
 using System;
@@ -74,16 +75,23 @@ namespace EmotionCapture
                 content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
 
                 response = await client.PostAsync(url, content);
-
+                
                 if (response.IsSuccessStatusCode)
                 {
                     var responseString = await response.Content.ReadAsStringAsync();
 
-                    DeserializeJSONAsync(responseString);
+                    if (responseString != "[]")
+                    {
+                        DeserializeJSONAsync(responseString);
+                    }
+                    else
+                    {
+                        currentEmotion.Text = "Please take a picture with at least one face in it!";
+                    }
                 }
                 else
                 {
-                    currentEmotion.Text = "Something is wrong!";
+                    currentEmotion.Text = "Something is wrong with the API call!";
                 }
                 file.Dispose();
             }
@@ -92,9 +100,9 @@ namespace EmotionCapture
         public async void DeserializeJSONAsync(string responseString)
         {
             var emotions = JsonConvert.DeserializeObject<EmotionModel[]>(responseString);
+
             var scores = emotions[0].scores;
             var highestScore = scores.Values.OrderByDescending(score => score).First();
-            //probably a more elegant way to do this.
             var highestEmotion = scores.Keys.First(key => scores[key] == highestScore);
             if (highestEmotion == "happiness")
             {
