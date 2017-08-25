@@ -64,7 +64,7 @@ namespace EmotionCapture
         async Task EmotionAnalyser(MediaFile file)
         {
             var client = new HttpClient();
-            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "664536650bae4da6889cd586eea2a941"); //5c14c67a270c4d0cae8a2e016745a23a
+            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "94b24a7e354046ac9e21803324c51163"); //a681f3699fb0492e83b9cebc80a67b36
             string url = "https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize";
             HttpResponseMessage response;
 

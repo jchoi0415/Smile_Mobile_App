@@ -49,3 +49,4 @@ C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCap
 C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture\obj\Debug\EmotionCapture.Pages.HistoryPage.xaml.g.cs
 C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture\obj\Debug\EmotionCapture.dll
 C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture\obj\Debug\EmotionCapture.pdb
+C:\Users\Choiboy\Desktop\MSA2017Xamarin\EmotionCapture\EmotionCapture\EmotionCapture\obj\Debug\EmotionCapture.csprojResolveAssemblyReference.cache
